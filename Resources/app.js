@@ -2,6 +2,7 @@
 var principal = Ti.UI.createWindow({
 	orientationModes: [Ti.UI.PORTRAIT],
 	backgroundColor:'#345',
+	//url:'ui/menu_general.js',
 });
 
 
@@ -92,4 +93,5 @@ principal.add(txt_clave);
 principal.add(lbl_cuerpo);
 principal.add(btn_actualiza);
 principal.add(btn_continua);
+
 principal.open();

@@ -29,7 +29,6 @@ menuOpciones.addEventListener('click', function(e)
 		title:e.rowData.title,
 	});
 	menu_op.open({animated:true, modal:true});
-	//Titanium.UI.currentTab.open(win,{animated:true});
 	
 });
 
