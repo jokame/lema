@@ -5,7 +5,7 @@ var menu = Ti.UI.createWindow({
 });
 
 var opciones = [
-	{title:'General', hasChild:false, test:'menu_general.js'},
+	{title:'General', hasChild:true, test:'menu_general.js'},
 	{title:'Mapa', hasChild:true, test:'menu_mapa.js'},
 	{title:'Gastos', hasChild:true, test:'menu_gastos.js'},
 	{title:'Reporte', hasChild:true, test:'menu_reporte.js'},
@@ -13,26 +13,26 @@ var opciones = [
 
 
 // create table view
-var tableview = Titanium.UI.createTableView({
+var menuOpciones = Titanium.UI.createTableView({
 	data:opciones,
-	backgroundColor: '#456',
-	width: '95%',
-	height: '95%',
+	//backgroundColor: '#456',
+	//width: '95%',
+	//height: '95%',
 });
 
 // create table view event listener
-tableview.addEventListener('click', function(e)
+menuOpciones.addEventListener('click', function(e)
 {
-	if (e.rowData.test)
-	{
-		var winOp = Titanium.UI.createWindow({
-			url:e.rowData.test,
-			title:e.rowData.title,
-		});
-		Titanium.UI.currentTab.open(winOp,{animated:true});
-	}
+	
+	var menu_op = Titanium.UI.createWindow({		
+		url:e.rowData.test,
+		title:e.rowData.title,
+	});
+	menu_op.open({animated:true, modal:true});
+	//Titanium.UI.currentTab.open(win,{animated:true});
+	
 });
 
 // add table view to the window
-Titanium.UI.currentWindow.add(tableview);
+Titanium.UI.currentWindow.add(menuOpciones);
 menu.open();

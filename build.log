@@ -6,7 +6,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 2 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.004238 seconds on emulator to get ready
+[DEBUG] waited 0.004180 seconds on emulator to get ready
 [DEBUG] com.jokame.lema installed? False
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
@@ -27,6 +27,10 @@ Logfile initialized
 [INFO] Waiting for SDCard to become available..
 [DEBUG] creating unsigned apk: /home/jokame/titanium/lema+/build/android/bin/app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/ui/menu.js
+[DEBUG] from resource zip => assets/Resources/ui/menu_gastos.js
+[DEBUG] from resource zip => assets/Resources/ui/menu_general.js
+[DEBUG] from resource zip => assets/Resources/ui/menu_mapa.js
+[DEBUG] from resource zip => assets/Resources/ui/menu_reporte.js
 [DEBUG] from resource zip => assets/Resources/ui/scrollable.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
@@ -85,7 +89,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 2 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.010557 seconds on emulator to get ready
+[DEBUG] waited 0.013264 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Launching application ... Lema+
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.jokame.lema/.LemaActivity }
